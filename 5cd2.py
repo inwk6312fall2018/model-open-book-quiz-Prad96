@@ -1,4 +1,4 @@
-class Player:
+class hands:
     def __init__(self, name:str):
         self.hand = []
         self.name = name
@@ -6,7 +6,7 @@ class Player:
         return self.name
 class PokerTable:
 
-    def __init__(self, players: List[Player]):
+    def __init__(self, players: List[hands]):
         self.deck = pyCardDeck.Deck(cards=deck(),name='Poker deck',reshuffle=False)
         self.players = players
         self.table_cards = []
